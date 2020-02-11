@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		2D08750C23F330F4003CD419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D08750A23F330F4003CD419 /* Main.storyboard */; };
 		2D08750E23F330F5003CD419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D08750D23F330F5003CD419 /* Assets.xcassets */; };
 		2D08751123F330F5003CD419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D08750F23F330F5003CD419 /* LaunchScreen.storyboard */; };
+		2D7840F223F3349800A52B6A /* SkeletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7840F123F3349800A52B6A /* SkeletonViewController.swift */; };
+		5C579E40D573C34FAEA25C04 /* Pods_TestSkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C40FE04A5275C7D09D18AEC /* Pods_TestSkeletonView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		2D08750D23F330F5003CD419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D08751023F330F5003CD419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D08751223F330F5003CD419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7840F123F3349800A52B6A /* SkeletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewController.swift; sourceTree = "<group>"; };
+		5C40FE04A5275C7D09D18AEC /* Pods_TestSkeletonView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977E8CCF9A31663BCBF26548 /* Pods-TestSkeletonView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSkeletonView.debug.xcconfig"; path = "Target Support Files/Pods-TestSkeletonView/Pods-TestSkeletonView.debug.xcconfig"; sourceTree = "<group>"; };
+		AD71CFBDD2CBD0577C64D52F /* Pods-TestSkeletonView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSkeletonView.release.xcconfig"; path = "Target Support Files/Pods-TestSkeletonView/Pods-TestSkeletonView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C579E40D573C34FAEA25C04 /* Pods_TestSkeletonView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2D08750323F330F4003CD419 /* TestSkeletonView */,
 				2D08750223F330F4003CD419 /* Products */,
+				599F60AE19AA3FCE2B124996 /* Pods */,
+				763D8AF84903844C2C61F880 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 			children = (
 				2D08750423F330F4003CD419 /* AppDelegate.swift */,
 				2D08750623F330F4003CD419 /* SceneDelegate.swift */,
+				2D7840F123F3349800A52B6A /* SkeletonViewController.swift */,
 				2D08750823F330F4003CD419 /* ViewController.swift */,
 				2D08750A23F330F4003CD419 /* Main.storyboard */,
 				2D08750D23F330F5003CD419 /* Assets.xcassets */,
@@ -67,6 +77,23 @@
 			path = TestSkeletonView;
 			sourceTree = "<group>";
 		};
+		599F60AE19AA3FCE2B124996 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				977E8CCF9A31663BCBF26548 /* Pods-TestSkeletonView.debug.xcconfig */,
+				AD71CFBDD2CBD0577C64D52F /* Pods-TestSkeletonView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		763D8AF84903844C2C61F880 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C40FE04A5275C7D09D18AEC /* Pods_TestSkeletonView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D08751523F330F5003CD419 /* Build configuration list for PBXNativeTarget "TestSkeletonView" */;
 			buildPhases = (
+				B5052404B39B29A8F7332A1C /* [CP] Check Pods Manifest.lock */,
 				2D0874FD23F330F4003CD419 /* Sources */,
 				2D0874FE23F330F4003CD419 /* Frameworks */,
 				2D0874FF23F330F4003CD419 /* Resources */,
+				28E01877198F2846755778C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28E01877198F2846755778C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSkeletonView/Pods-TestSkeletonView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSkeletonView/Pods-TestSkeletonView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestSkeletonView/Pods-TestSkeletonView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5052404B39B29A8F7332A1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSkeletonView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D0874FD23F330F4003CD419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				2D08750923F330F4003CD419 /* ViewController.swift in Sources */,
 				2D08750523F330F4003CD419 /* AppDelegate.swift in Sources */,
 				2D08750723F330F4003CD419 /* SceneDelegate.swift in Sources */,
+				2D7840F223F3349800A52B6A /* SkeletonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		2D08751623F330F5003CD419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977E8CCF9A31663BCBF26548 /* Pods-TestSkeletonView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		2D08751723F330F5003CD419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD71CFBDD2CBD0577C64D52F /* Pods-TestSkeletonView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
