@@ -19,13 +19,12 @@ class SkeletonViewController: UIViewController {
 
         self.view.showAnimatedGradientSkeleton(transition: .crossDissolve(0.25))
         
-        
-        self.oneLabel.text = "Cione"
-        self.twoLabel.text = "Ciaone ancora ancorone!"
-    
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        
             self.view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+            
+            self.oneLabel.text = "Cione"
+            self.twoLabel.text = "Ciaone ancora ancorone!"
         }
     }
     

@@ -5,7 +5,7 @@ target 'TestSkeletonView' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod "SkeletonView"
+  pod "SkeletonView", "~> 1.8.4"
   pod "Alamofire", "~> 4.9.0"
   
   # Pods for TestSkeletonView
